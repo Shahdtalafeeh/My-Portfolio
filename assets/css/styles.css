@@ -381,10 +381,68 @@ img {
   margin-left: auto;
   transition: 0.4s;
 }
+.skills__list{
+  row-gap: 1.5rem;
+  padding-left: 2.7rem
+}
 .skills__titles {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
+}
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.skills__bar,
+.skills__percentage{
+  height: 5px;
+  border-radius: .25rem;
+}
+.skills__bar{
+  background-color: var(--first-color-lighter);
+}
+.skills__percentage{
+  display: block;
+  background-color: var(--first-color);
+}
+.skills__html{
+  width: 70%;
+}
+.skills__css{
+  width: 50%;
+}
+.skills__js{
+  width: 50%;
+}
+.skills__angular{
+  width: 60%;
+}
+.skills__firebase{
+  width: 40%;
+}
+.skills__autocad{
+  width: 60%;
+}
+.skills__qs{
+  width: 80%;
+}
+.skills__gs{
+  width: 60%;
+}
+.skills__ge{
+  width: 70%;
+}
+.skills__close .skills__list{
+  height: 0;
+  overflow: hidden;
+}
+.skills__open .skills__list{
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+.skills__open .skills__arrow{
+  transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
 
